@@ -1,0 +1,26 @@
+<div class="row" *ngIf="userIsLogedIn()">
+  <div class="row"  >
+    <ul>
+      <li *ngFor="let msg of messages" class="bubble">
+        <b> {{msg.username}}: </b> {{msg.message}}
+      </li>
+    </ul>
+  </div>
+ 
+  <div class="row">
+    <div class="col-sm-10">
+      <form >
+        <div class="form-group">
+            <input type="text" name='message' [(ngModel)]="message.message" class="form-control" id="inputEmail3" placeholder="Type your message...">      
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-2">
+      <button type="button" (click)="sendMessage()" class="btn btn-default">Send</button>
+    </div>
+  </div>
+</div>
+
+
+
+  
