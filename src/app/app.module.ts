@@ -5,7 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AngularFireModule} from 'angularfire2'
 import { AngularFireDatabaseModule } from 'angularfire2/database'
-import { environment } from '../environments/environment';
+import {environment} from '../environments/environment'
 
 
 import { AppComponent } from './app.component';
@@ -13,7 +13,6 @@ import { LoginComponent } from './components/login/login.component';
 import { ChatComponent } from './components/chat/chat.component';
 import {ChatService} from './services/chat.service'
 import {LoginService} from './services/login.service'
-
 
 
 @NgModule({
@@ -24,7 +23,6 @@ import {LoginService} from './services/login.service'
   ],
   imports: [
     BrowserModule,
-    AppRouter,
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
